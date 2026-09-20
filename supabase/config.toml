@@ -1,0 +1,9 @@
+project_id = "qvdaelwujcerllbqufvn"
+
+# The webhook is called by Stripe (no Supabase JWT); it is protected by the Stripe signature instead.
+[functions.stripe-webhook]
+verify_jwt = false
+
+# create-checkout verifies the signed-in user itself (auth.getUser), so the gateway check is off.
+[functions.create-checkout]
+verify_jwt = false
