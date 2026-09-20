@@ -1,0 +1,8 @@
+{
+  "name": "myinviteqr",
+  "compatibility_date": "2026-09-20",
+  "assets": {
+    "directory": "./build/web",
+    "not_found_handling": "single-page-application"
+  }
+}
